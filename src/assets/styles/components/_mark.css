@@ -1,0 +1,8 @@
+.mark {
+  color: var(--on-canvas);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: var(--step-3);
+  line-height: 1.231;
+  text-decoration: none;
+}

@@ -1,0 +1,106 @@
+@layer reset {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    color: currentColor;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  :not([class]) {
+    h1&, h2&, h3&, h4&, h5&, h6& {
+      font-family: var(--font-serif);
+      margin-block: .5em;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    h1& {
+      font-size: var(--step-5);
+    }
+
+    h2& {
+      font-size: var(--step-4);
+    }
+
+    h3& {
+      font-size: var(--step-3);
+    }
+
+    h4& {
+      font-size: var(--step-2);
+    }
+
+    h5& {
+      font-size: var(--step-1);
+    }
+
+    h6& {
+      font-size: var(--step-0);
+    }
+
+    p& {
+      text-wrap: pretty;
+    }
+
+    p&, ol&, ul& {
+      margin-block: 1.5em;
+    }
+
+    ol&, ul& {
+      padding-inline-start: 1.5em;
+      list-style: revert;
+    }
+
+    li& {
+      margin-block: 0.5em;
+    }
+
+    blockquote {
+      background-color: var(--canvas-sunken);
+      padding-block: var(--space-s);
+      padding-inline: var(--space-m);
+      position: relative;
+    }
+
+    blockquote p {
+      margin: 0;
+    }
+
+    blockquote::before  {
+      content: "";
+      background-color: var(--accent);
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 3px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} &mdash; frgmnt.art</title>
+  <meta name="description" content="An audio sketchbook.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="/images/rel-icon.png" sizes="192x192" type="image/png">
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+<div class="wrapper">
+  <nav class="nav">
+    <a class="mark" href="/">frgmnt.art</a>
+    <div class="nav__links">
+      <a href="#">Posts</a>
+      <a href="/about">About</a>
+    </div>
+    <div class="nav__social">
+      <a href="https://lostlemming.bandcamp.com/">
+        <svg aria-labelledby="bandcamp-title" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <title id="bandcamp-title">Github</title>
+          <use href="/images/svg-sprite.svg#bandcamp"></use>
+        </svg>
+      </a>
+      <a href="https://github.com/flynnt">
+        <svg aria-labelledby="github-title" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <title id="github-title">Bandcamp</title>
+          <use href="/images/svg-sprite.svg#github"></use>
+        </svg>
+      </a>
+      <a href="https://beige.party/@tflynn">
+        <svg aria-labelledby="mastodon-title" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <title id="mastodon-title">Mastodon</title>
+          <use href="/images/svg-sprite.svg#mastodon"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="nav__meta" role="contentinfo">
+      <small>&copy; 2024 Ted Flynn</small>
+    </div>
+  </nav>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</div>
+</body>
+</html>

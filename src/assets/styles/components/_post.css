@@ -1,0 +1,10 @@
+.post__meta {
+  font-size: var(--step-negative-1);
+  font-style: italic;
+}
+
+.post__footer {
+  align-items: baseline;
+  display: flex;
+  gap: var(--space-2xs);
+}

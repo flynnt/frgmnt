@@ -1,0 +1,11 @@
+---
+eleventyImport:
+  collections: ["postFeed"]
+---
+{% extends 'layouts/base.njk' %}
+{% set postListTitle = 'Latest Posts' %}
+{% set postListItems = collections.postFeed %}
+
+{% block content %}
+  {% include "partials/components/post-list.njk" %}
+{% endblock %}

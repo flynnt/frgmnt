@@ -1,0 +1,9 @@
+.h-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-2xs);
+}
+
+.h-list > * {
+  line-height: 1.231;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "frgmnt.art",
+  "shortDesc": "An audio sketchbook.",
+  "url": "https://www.frgmnt.art",
+  "authorEmail": "frgmnt@spectral.mozmail.com",
+  "authorName": "Ted Flynn",
+  "themeLight": "#d1d1d2",
+  "themeDark": "#202020",
+  "colorScheme": "dark light",
+  "socialImage": "/images/site-image.png",
+  "maxPostsPerPage": 10
+}

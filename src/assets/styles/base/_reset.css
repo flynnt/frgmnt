@@ -14,7 +14,12 @@
 
   img, picture, video, canvas, svg {
     display: block;
+    height: auto;
     max-inline-size: 100%;
+  }
+
+  audio {
+    width: 100%;
   }
 
   input, button, textarea, select {
@@ -35,7 +40,7 @@
   :not([class]) {
     h1&, h2&, h3&, h4&, h5&, h6& {
       font-family: var(--font-serif);
-      margin-block: .5em;
+      margin-block: .6em;
       line-height: 1.25;
       text-wrap: balance;
     }
@@ -92,7 +97,7 @@
       margin: 0;
     }
 
-    blockquote::before  {
+    blockquote::before {
       content: "";
       background-color: var(--accent);
       display: block;

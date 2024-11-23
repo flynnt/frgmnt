@@ -1,0 +1,34 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <article class="stack">
+    <header class="stack stack--xs">
+      <h1 class="hdg hdg--1">{{ title }}</h1>
+      {% if date %}
+        <div class="stack stack--3xs">
+          <div class="post-meta">Posted:
+            <time datetime="{{ date | w3DateFilter }}">{{ date | dateFormat }}</time>
+          </div>
+          {% if updated %}
+            <div class="post-meta">Updated:
+              <time datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </header>
+    <div class="prose">{{ content | safe }}</div>
+    {% if tags %}
+      <footer class="post__footer">
+        <h3 class="hdg--label">Filed Under:</h3>
+        <ul class="h-list">
+          {% for tag in tags %}
+            <li class="h-list__link">
+              <a class="tag" href="/tags/{{ tag }}/">#{{ tag|capitalize }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </footer>
+    {% endif %}
+  </article>
+{% endblock %}

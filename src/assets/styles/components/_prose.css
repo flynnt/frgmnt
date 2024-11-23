@@ -1,3 +1,16 @@
-.prose {
-  max-width: 65ch;
+.prose figcaption {
+  font-size: var(--step-negative-1);
+  font-style: italic;
+  margin: var(--space-2xs) auto auto 0;
 }
+
+/*
+.prose code {
+  background-color: var(--canvas-sunken);
+  box-shadow: var(--shadow-default);
+  display: block;
+  font-size: var(--step-negative-1);
+  padding-block: var(--space-m);
+  padding-inline: var(--space-m);
+}
+*/

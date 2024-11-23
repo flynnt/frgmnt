@@ -1,0 +1,7 @@
+{% extends "layouts/base.njk" %}
+
+{% set postListItems = collections.posts %}
+
+{% block content %}
+  {% include "partials/components/post-list.njk" %}
+{% endblock %}

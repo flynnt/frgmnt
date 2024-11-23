@@ -2,7 +2,7 @@
 
 {% block content %}
   <div class="stack">
-    <h1 class="hdg hdg--1">{{ title }}</h1>
-    <div>{{ content | safe }}</div>
+    <h1 class="hdg hdg--1 {{ 'sr-only' if visuallyHideTitle }}">{{ title }}</h1>
+    <div class="prose">{{ content | safe }}</div>
   </div>
 {% endblock %}

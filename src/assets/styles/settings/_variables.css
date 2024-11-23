@@ -5,12 +5,13 @@
   --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-serif: 'Arvo', ui-serif, georgia, cambria, 'Times New Roman', times, serif;
   --on-canvas: #202020;
+  --shadow-default: 0 5px 10px rgb(0 0 0 / 20%);
   --text-decoration: rgb(from var(--accent) r g b / 50%);
   --text-decoration-hover: rgb(from var(--accent) r g b / 100%);
 
   /* Typography */
-  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
-  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --step-negative-2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --step-negative-1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
   --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
   --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
   --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
@@ -53,5 +54,6 @@
     --canvas: #202020;
     --canvas-sunken: #3d3d3d;
     --on-canvas: #d1d1d2;
+    --shadow-default: 0 5px 10px rgb(0 0 0 / 50%);
   }
 }

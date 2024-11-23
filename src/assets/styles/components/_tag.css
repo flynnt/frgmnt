@@ -1,0 +1,9 @@
+.tag {
+  color: var(--on-canvas);
+  font-size: var(--step-negative-2);
+  text-decoration-color: rgb(from currentcolor r g b / 50%);
+}
+
+.tag:hover {
+  text-decoration-color: rgb(from currentcolor r g b / 100%);
+}

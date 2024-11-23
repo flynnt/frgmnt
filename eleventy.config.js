@@ -1,4 +1,5 @@
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
+import { feedPlugin } from '@11ty/eleventy-plugin-rss';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import { dateFormat } from './src/filters/date-format-filter.js';
 import { w3DateFilter } from './src/filters/w3-date-filter.js';
@@ -8,6 +9,24 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('dateFormat', dateFormat);
   eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: 'atom',
+    outputPath: '/feed.xml',
+    collection: {
+      name: 'posts',
+      limit: 10,
+    },
+    metadata: {
+      language: 'en',
+      title: 'frgmnt.art',
+      subtitle: 'An Audio Sketchbook',
+      base: 'https://frgmnt.art/',
+      author: {
+        name: 'Ted Flynn',
+        email: 'ted@hopeinghosts.com',
+      },
+    },
+  });
   eleventyConfig.addPassthroughCopy('public');
   eleventyConfig.addPassthroughCopy('src/assets/styles');
   eleventyConfig.addPassthroughCopy('src/assets/scripts');

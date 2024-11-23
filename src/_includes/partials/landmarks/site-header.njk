@@ -3,8 +3,9 @@
     <h2 class="sr-only">Primary Navigation</h2>
     <a class="mark" href="/">frgmnt.art</a>
     <div class="nav__links">
-      <a href="/archive/">All Posts</a>
-      <a href="/about/">About</a>
+      <a {{ 'aria-current=page' if page.url == "/archive/" }} href="/archive/">All Posts</a>
+      <a {{ 'aria-current=page' if page.url == "/about/" }} href="/about/">About</a>
+      <a href="/feed.xml">RSS</a>
     </div>
     <div class="nav__social">
       <a href="https://lostlemming.bandcamp.com/">

@@ -3,7 +3,7 @@
   --canvas: #d1d1d2;
   --canvas-sunken: #e5e5e6;
   --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-serif: 'Arvo', ui-serif, georgia, cambria, 'Times New Roman', times, serif;
+  --font-serif: 'Bitter', ui-serif, georgia, cambria, 'Times New Roman', times, serif;
   --on-canvas: #202020;
   --shadow-default: 0 5px 10px rgb(0 0 0 / 20%);
   --text-decoration: rgb(from var(--accent) r g b / 50%);

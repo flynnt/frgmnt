@@ -11,7 +11,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(feedPlugin, {
     type: 'atom',
-    outputPath: '/feed.xml',
+    outputPath: '/public/feed.xml',
     collection: {
       name: 'posts',
       limit: 10,

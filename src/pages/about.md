@@ -1,6 +1,8 @@
 ---
 title: About
 permalink: '/{{ title | slugify }}/'
+pageDesc: 'About frgmnt.art'
+socialImage: '/images/post/skeletor-create.jpeg'
 ---
 
 ## A Brief Introduction

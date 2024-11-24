@@ -1,6 +1,7 @@
 ---
 date: '2024-11-24'
 title: Bands I Have Been In
+pageDesc: 'A list of all the semi-notable bands I have been in.'
 permalink: '/posts/{{ title | slugify }}/'
 tags:
   - blog

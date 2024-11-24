@@ -4,7 +4,7 @@
       <h1 class="hdg hdg--1 {{ 'sr-only' if visuallyHideTitle }}">{{ title }}</h1>
     {% endif %}
     {% if postListTitle %}
-      <h{{ titleLevel}} class="hdg hdg--1">{{ postListTitle }}</h{{ titleLevel }}>
+      <h{{ titleLevel|d(2)}} class="hdg hdg--1">{{ postListTitle }}</h{{ titleLevel|d(2) }}>
     {% endif %}
     <div class="stack">
       {% for post in postListItems|reverse %}

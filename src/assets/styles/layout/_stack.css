@@ -13,3 +13,7 @@
 .stack--3xs > * + * {
   margin-block-start: var(--space-3xs);
 }
+
+.stack > *.sr-only + * {
+  margin-block-start: 0;
+}

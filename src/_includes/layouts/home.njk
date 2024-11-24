@@ -4,6 +4,7 @@ eleventyImport:
 ---
 {% extends 'layouts/base.njk' %}
 {% set postListTitle = 'Latest Posts' %}
+{% set titleLevel = 2 %}
 {% set postListItems = collections.postFeed %}
 
 {% block content %}

@@ -23,7 +23,7 @@ export default async function (eleventyConfig) {
       base: 'https://frgmnt.art/',
       author: {
         name: 'Ted Flynn',
-        email: 'ted@hopeinghosts.com',
+        email: 'frgmnt@spectral.mozmail.com',
       },
     },
   });

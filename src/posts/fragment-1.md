@@ -2,7 +2,7 @@
 date: '2024-11-24'
 title: Fragment 1
 permalink: '/posts/{{ title | slugify }}/'
-audioSrc: '/audio/fragment-1.m4a'
+audioSrc: '/audio/fragment-1.mp3'
 pageDesc: 'An audio fragment from frgmnt.art'
 tags:
   - audio

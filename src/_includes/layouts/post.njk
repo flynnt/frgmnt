@@ -21,9 +21,9 @@
     {% if tags %}
       <footer class="post__footer">
         <h3 class="hdg--label">Filed Under:</h3>
-        <ul class="h-list">
+        <ul class="inline-list">
           {% for tag in tags %}
-            <li class="h-list__link">
+            <li class="inline-list__link">
               <a class="tag" href="/tags/{{ tag }}/">#{{ tag|capitalize }}</a>
             </li>
           {% endfor %}

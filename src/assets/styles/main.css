@@ -10,7 +10,7 @@
 @import "base/_html.css";
 
 /* Layout */
-@import "layout/_h-list.css";
+@import "layout/_inline-list.css";
 @import "layout/_stack.css";
 @import "layout/_wrapper.css";
 

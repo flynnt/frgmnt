@@ -8,5 +8,6 @@
   "themeDark": "#202020",
   "colorScheme": "dark light",
   "socialImage": "/images/site-image.png",
+  "authorAvatar": "/images/rel-icon.png",
   "maxPostsPerPage": 10
 }

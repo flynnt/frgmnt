@@ -8,12 +8,12 @@
     {% endif %}
     <div class="stack">
       {% for post in postListItems|reverse %}
-        <article class="post stack stack--xs">
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <article class="h-entry post stack stack--xs">
+          <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
           <div class="post__meta">
-            <time datetime="{{ post.data.date | w3DateFilter }}">{{ post.data.date | dateFormat }}</time>
+            <time class="dt-published" datetime="{{ post.data.date | w3DateFilter }}">{{ post.data.date | dateFormat }}</time>
           </div>
-          <div>{{ post.data.page.excerpt }}</div>
+          <div class="p-summary">{{ post.data.page.excerpt }}</div>
           {% if post.data.audioSrc %}
             {% audio post.data.audioSrc %}
           {% endif %}

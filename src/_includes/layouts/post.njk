@@ -1,9 +1,9 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <article class="post stack">
+  <article class="h-entry post stack">
     <header class="stack stack--xs">
-      <h1 class="hdg hdg--1">{{ title }}</h1>
+      <h1 class="hdg hdg--1 p-name">{{ title }}</h1>
       {% if date %}
         <div class="stack stack--3xs">
           <div class="post__meta">Posted:
@@ -11,20 +11,21 @@
           </div>
           {% if updated %}
             <div class="post__meta">Updated:
-              <time datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
+              <time class="dt-published" datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
             </div>
           {% endif %}
         </div>
       {% endif %}
     </header>
-    <div class="prose">{{ content | safe }}</div>
+    <div class="e-content prose">{{ content | safe }}</div>
     {% if tags %}
       <footer class="post__footer">
+        {% include "partials/microdata/post-h-card.njk" %}
         <h3 class="hdg--label">Filed Under:</h3>
         <ul class="inline-list">
           {% for tag in tags %}
             <li class="inline-list__link">
-              <a class="tag" href="/tags/{{ tag }}/">#{{ tag|capitalize }}</a>
+              <a class="p-category tag" href="/tags/{{ tag }}/">#{{ tag|capitalize }}</a>
             </li>
           {% endfor %}
         </ul>

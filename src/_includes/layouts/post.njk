@@ -7,11 +7,11 @@
       {% if date %}
         <div class="stack stack--3xs">
           <div class="post__meta">Posted:
-            <time datetime="{{ date | w3DateFilter }}">{{ date | dateFormat }}</time>
+            <time class="dt-published" datetime="{{ date | w3DateFilter }}">{{ date | dateFormat }}</time>
           </div>
           {% if updated %}
             <div class="post__meta">Updated:
-              <time class="dt-published" datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
+              <time class="dt-updated" datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
             </div>
           {% endif %}
         </div>

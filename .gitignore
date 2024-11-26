@@ -7,3 +7,4 @@ node_modules/
 ._.DS_Store
 env/local.env
 npm-debug.log
+.env

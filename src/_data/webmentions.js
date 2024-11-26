@@ -8,7 +8,9 @@ dotenv.config();
 const API_BASE = 'https://webmention.io/api';
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 // eslint-disable-next-line no-undef
-const TOKEN = CF_PAGES ? WEBMENTION_IO_TOKEN : process.env.WEBMENTION_IO_TOKEN;
+const TOKEN = CF_PAGES
+  ? env.WEBMENTION_IO_TOKEN
+  : process.env.WEBMENTION_IO_TOKEN;
 const { domain } = settings;
 
 async function fetchWebMentions(perPage = 100000) {

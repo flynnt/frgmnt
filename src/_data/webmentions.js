@@ -14,6 +14,7 @@ async function fetchWebMentions(perPage = 100000) {
   const url = `${API_BASE}/mentions.jf2?token=${TOKEN}&domain=${domain}&per-page=${perPage}`;
   const response = await fetch(url);
   if (!response.ok) {
+    console.log('Error fetching webmentions.');
     return;
   }
 

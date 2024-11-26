@@ -1,0 +1,12 @@
+name: sync-build.yml
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger CF Pages build.
+        run: curl -s -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/${TOKEN}"
+        env:
+          TOKEN: ${{ secrets.CF_PAGES_BUILD_HOOK_TOKEN }}

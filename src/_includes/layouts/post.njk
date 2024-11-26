@@ -1,35 +1,41 @@
 {% extends 'layouts/base.njk' %}
 
+{%- set webmentionUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
 {% block content %}
-  <article class="h-entry post stack">
-    <header class="stack stack--xs">
-      <h1 class="hdg hdg--1 p-name">{{ title }}</h1>
-      {% if date %}
-        <div class="stack stack--3xs">
-          <div class="post__meta">Posted:
-            <time class="dt-published" datetime="{{ date | w3DateFilter }}">{{ date | dateFormat }}</time>
-          </div>
-          {% if updated %}
-            <div class="post__meta">Updated:
-              <time class="dt-updated" datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
+  <div class="stack">
+    <div class="stack">
+      <article class="h-entry post stack">
+        <header class="stack stack--xs">
+          <h1 class="hdg hdg--1 p-name">{{ title }}</h1>
+          {% if date %}
+            <div class="stack stack--3xs">
+              <div class="post__meta">Posted:
+                <time class="dt-published" datetime="{{ date | w3DateFilter }}">{{ date | dateFormat }}</time>
+              </div>
+              {% if updated %}
+                <div class="post__meta">Updated:
+                  <time class="dt-updated" datetime="{{ updated | w3DateFilter }}">{{ updated | dateFormat }}</time>
+                </div>
+              {% endif %}
             </div>
           {% endif %}
-        </div>
-      {% endif %}
-    </header>
-    <div class="e-content prose">{{ content | safe }}</div>
-    {% if tags %}
-      <footer class="post__footer">
-        {% include "partials/microdata/post-h-card.njk" %}
-        <h3 class="hdg--label">Filed Under:</h3>
-        <ul class="inline-list">
-          {% for tag in tags %}
-            <li class="inline-list__link">
-              <a class="p-category tag" href="/tags/{{ tag }}/">#{{ tag|capitalize }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </footer>
-    {% endif %}
-  </article>
+        </header>
+        <div class="e-content prose">{{ content | safe }}</div>
+        {% if tags %}
+          <footer class="post__footer">
+            {% include "partials/microdata/post-h-card.njk" %}
+            <h3 class="hdg--label">Filed Under:</h3>
+            <ul class="inline-list">
+              {% for tag in tags %}
+                <li class="inline-list__link">
+                  <a class="p-category tag" href="/tags/{{ tag }}/">#{{ tag|capitalize }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </footer>
+        {% endif %}
+      </article>
+    </div>
+    {% include "partials/components/webmentions.njk" %}
+  </div>
 {% endblock %}

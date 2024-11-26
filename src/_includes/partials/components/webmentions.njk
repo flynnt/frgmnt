@@ -1,0 +1,18 @@
+{% if webmentions %}
+  {% set mentions = webmentions.children|getWebmentionsForUrl(webmentionUrl) %}
+{% endif %}
+<hr>
+<div class="stack stack--xs">
+  <h3 class="hdg hdg--5">Web Mentions</h3>
+  {% if mentions|length %}
+    <ol class="stack">
+      {% for webmention in mentions %}
+        <li>
+          {% include "partials/components/webmention.njk" %}
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="webmention__content">No web mentions yet.</p>
+  {% endif %}
+</div>

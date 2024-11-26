@@ -1,0 +1,44 @@
+<div id="webmention-{{ webmention['wm-id'] }}" class="stack--3xs webmention">
+  <div class="webmention__meta">
+    {% if webmention.author %}
+      <a
+        class="webmention__author h-card u-url"
+        href="{{ webmention.url|d('') }}"
+        target="_blank"
+        rel="ugc nofollow"
+      >
+        {% if webmention.author.photo %}
+          <img
+            class="webmention__author-photo u-photo"
+            src="{{ webmention.author.photo }}"
+            alt="An avatar representing {{ webmention.author.name }}"
+            width="48"
+            height="48"
+            loading="lazy"
+          >
+        {% else %}
+          <img
+            class="webmention__author__photo"
+            src="{{ '/images/avatar-default.jpg'|url }}"
+            alt="An avatar representing {{ webmention.author.name }}"
+            width="48" height="48"
+          >
+        {% endif %}
+        <strong class="p-name">{{ webmention.author.name|replace('????', '')|trim }}</strong> </a>
+    {% else %}
+      <span class="webmention__author">
+                    <img class="webmention__author-photo" src="{{ '/images/avatar-default.svg'|url }}" alt="Anonymous">
+                    <strong>Anonymous</strong>
+                  </span>
+    {% endif %}
+    {% if webmention.published %}
+      <span class="webmention__meta__divider" aria-hidden="true">&sdot;</span>
+      <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">
+        {{ webmention.published|dateFormat }}
+      </time>
+    {% endif %}
+  </div>
+  <div class="webmention__content p-content">
+    {{ webmention.content.value|safe }}
+  </div>
+</div>

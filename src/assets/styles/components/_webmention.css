@@ -1,0 +1,29 @@
+.webmention {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem 0 1rem 60px;
+}
+
+.webmention__author-photo {
+  border-radius: 50%;
+  height: 48px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1rem;
+  width: 48px;
+}
+
+.webmention__meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--step-negative-1);
+  gap: var(--space-3xs);
+  order: -1;
+}
+
+.webmention__content {
+  font-size: var(--step-negative-1);
+}

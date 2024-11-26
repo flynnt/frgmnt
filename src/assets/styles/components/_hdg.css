@@ -1,11 +1,27 @@
 .hdg {
   font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .hdg--1 {
   font-size: var(--step-5);
-  font-weight: 700;
-  line-height: 1.25;
+}
+
+.hdg--2 {
+  font-size: var(--step-4);
+}
+
+.hdg--3 {
+  font-size: var(--step-3);
+}
+
+.hdg--4 {
+  font-size: var(--step-2);
+}
+
+.hdg--5 {
+  font-size: var(--step-1);
 }
 
 .hdg--label {

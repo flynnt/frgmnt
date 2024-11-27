@@ -2,10 +2,10 @@
   {% set mentions = webmentions.children|getWebmentionsForUrl(webmentionUrl) %}
 {% endif %}
 <hr>
-<div class="stack stack--xs">
+<div class="stack stack--2xs">
   <h3 class="hdg hdg--5">Web Mentions</h3>
   {% if mentions|length %}
-    <ol class="stack">
+    <ol class="stack stack--xs">
       {% for webmention in mentions %}
         <li>
           {% include "partials/components/webmention.njk" %}

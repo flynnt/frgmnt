@@ -6,16 +6,20 @@
   margin-block-start: var(--space-s);
 }
 
-.stack--m > * + * {
-  margin-block-start: var(--space-m);
-}
-
 .stack--xs > * + * {
   margin-block-start: var(--space-xs);
 }
 
+.stack--2xs > * + * {
+  margin-block-start: var(--space-2xs);
+}
+
 .stack--3xs > * + * {
   margin-block-start: var(--space-3xs);
+}
+
+.stack--m > * + * {
+  margin-block-start: var(--space-m);
 }
 
 .stack > *.sr-only + * {

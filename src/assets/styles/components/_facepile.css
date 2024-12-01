@@ -1,0 +1,12 @@
+.facepile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.facepile__face > img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 48px;
+  width: 48px;
+}

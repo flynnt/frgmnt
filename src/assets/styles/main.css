@@ -18,6 +18,7 @@
 @import "landmarks/_nav.css";
 
 /* Components */
+@import "components/_facepile.css";
 @import "components/_hdg.css";
 @import "components/_icon.css";
 @import "components/_mark.css";

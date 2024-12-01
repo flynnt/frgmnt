@@ -1,18 +1,82 @@
 {% if webmentions %}
   {% set mentions = webmentions.children|getWebmentionsForUrl(webmentionUrl) %}
+  {% set likes = webmentions.children|getLikesForUrl(webmentionUrl) %}
+  {% set shares = webmentions.children|getSharesForUrl(webmentionUrl) %}
 {% endif %}
 <hr>
-<div class="stack stack--2xs">
+<div class="stack stack--m">
   <h3 class="hdg hdg--5">Web Mentions</h3>
   {% if mentions|length %}
     <ol class="stack stack--xs">
       {% for webmention in mentions %}
-        <li>
+        <li class="webmention__item">
           {% include "partials/components/webmention.njk" %}
         </li>
       {% endfor %}
     </ol>
   {% else %}
-    <p class="webmention__content">No web mentions yet.</p>
+    <p class="webmention__content">No comments yet.</p>
+  {% endif %}
+  {% if likes|length %}
+    <div class="webmentions stack--s">
+      <h3 class="hdg hdg--5">{{ likes|length }} Like{{'s' if likes|length > 1}}</h3>
+      <ul class="facepile">
+        {% for like in likes %}
+          <li class="facepile__item">
+            {% set authorName = like.author.name|replace('????', '')|trim %}
+            <a class="h-card u-url facepile__face" href="{{ like.url }}" target="_blank" rel="ugc nofollow">
+              {% if like.author.photo %}
+                <img
+                  class="u-photo"
+                  src="{{ like.author.photo }}"
+                  alt="An avatar representing {{ authorName }}"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                >
+              {% else %}
+                <img
+                  class="u-photo"
+                  src="{{ '/images/avatar-default.jpg'|url }}"
+                  alt="An avatar representing {{ authorName }}"
+                  width="48" height="48"
+                >
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+  {% if shares|length %}
+    <div class="webmentions stack--s">
+      <h3 class="hdg hdg--5">{{ shares|length }} Share{{'s' if shares|length > 1}}</h3>
+      <ul class="facepile">
+        {% for share in shares %}
+          <li class="facepile__item">
+            {% set authorName = share.author.name|replace('????', '')|trim %}
+            <a class="h-card u-url facepile__face" href="{{ share.url }}" target="_blank" rel="ugc nofollow">
+              {% if share.author.photo %}
+                <img
+                  class="u-photo"
+                  src="{{ share.author.photo }}"
+                  alt="An avatar representing {{ authorName }}"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                >
+              {% else %}
+                <img
+                  class="u-photo"
+                  src="{{ '/images/avatar-default.jpg'|url }}"
+                  alt="An avatar representing {{ authorName }}"
+                  width="48" height="48"
+                >
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endif %}
 </div>

@@ -27,9 +27,9 @@
         <strong class="p-name">{{ webmention.author.name|replace('????', '')|trim }}</strong> </a>
     {% else %}
       <span class="webmention__author">
-                    <img class="webmention__author-photo" src="{{ '/images/avatar-default.svg'|url }}" alt="Anonymous">
-                    <strong>Anonymous</strong>
-                  </span>
+        <img class="webmention__author-photo" src="{{ '/images/avatar-default.svg'|url }}" alt="Anonymous">
+        <strong>Anonymous</strong>
+      </span>
     {% endif %}
     {% if webmention.published %}
       <span class="webmention__meta__divider" aria-hidden="true">&sdot;</span>

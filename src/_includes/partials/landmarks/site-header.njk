@@ -1,6 +1,5 @@
 <header role="banner">
   <nav class="nav">
-    <h2 class="sr-only">Primary Navigation</h2>
     <a class="mark" href="/">frgmnt.art</a>
     <div class="nav__links">
       <a {{ 'aria-current=page' if page.url == "/archive/" }} href="/archive/">All Posts</a>
@@ -10,7 +9,7 @@
     {% set track = lastfm.recenttracks.track[0] %}
     {% if track %}
       <div class="nav__feeds stack stack--2xs">
-        <h3 class="hdg hdg--aside">The last thing I listened to:</h3>
+        <div class="hdg hdg--aside">The last thing I listened to:</div>
         <figure class="track">
           {% if track.image %}
             <img

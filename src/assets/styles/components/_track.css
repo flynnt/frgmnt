@@ -3,7 +3,7 @@
   min-height: 42px;
   padding: 4px 16px 4px 38px;
   position: relative;
-  width: max-content;
+  max-width: 325px;
 }
 
 .track__media {
@@ -14,5 +14,6 @@
 
 .track__meta {
   font-size: var(--step-negative-2);
+  line-height: 1.3;
   margin-inline-start: 8px;
 }

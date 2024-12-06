@@ -15,7 +15,7 @@
           {% if track.image %}
             <img
               class="track__media"
-              src="{{ track.image[0]['#text'] }}"
+              src="{{ track.image[1]['#text'] }}"
               alt="The album cover for {{ track.album['#text'] }}"
               width="34"
               height="34"
@@ -30,7 +30,10 @@
             >
           {% endif %}
           <figcaption class="track__meta">
-            <a href="{{ track.url }}">"{{ track.name }}"</a>, by {{ track.artist['#text'] }}
+            <a href="{{ track.url }}">"{{ track.name }}"</a>
+            <div>
+              {{ track.artist['#text'] }}
+            </div>
           </figcaption>
         </figure>
       </div>

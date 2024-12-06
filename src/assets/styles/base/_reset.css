@@ -37,7 +37,8 @@
     list-style: none;
   }
 
-  :not([class]) {
+  :not([class]),
+  .p-name {
     h1&, h2&, h3&, h4&, h5&, h6& {
       font-family: var(--font-serif);
       margin-block: .6em;

@@ -24,6 +24,11 @@
   font-size: var(--step-1);
 }
 
+.hdg--aside {
+  font-size: var(--step-negative-1);
+  white-space: nowrap;
+}
+
 .hdg--label {
   font-size: var(--step-negative-2);
   white-space: nowrap;

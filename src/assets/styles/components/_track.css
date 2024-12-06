@@ -1,0 +1,18 @@
+.track {
+  background-color: var(--canvas-sunken);
+  min-height: 42px;
+  padding: 4px 16px 4px 38px;
+  position: relative;
+  width: max-content;
+}
+
+.track__media {
+  left: 4px;
+  position: absolute;
+  top: 4px;
+}
+
+.track__meta {
+  font-size: var(--step-negative-2);
+  margin-inline-start: 8px;
+}

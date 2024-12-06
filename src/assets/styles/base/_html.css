@@ -59,14 +59,7 @@ h1 {
   font-family: var(--font-serif);
 }
 
-aside {
+.track-container {
   justify-items: end;
   margin-block-start: 1rem;
-}
-
-@media (--above-large-viewport) {
-  aside {
-    justify-items: start;
-    margin-block-start: 0;
-  }
 }

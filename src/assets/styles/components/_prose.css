@@ -4,6 +4,10 @@
   margin: var(--space-2xs) auto auto 0;
 }
 
+.prose pre {
+  max-width: calc(100vw - 3rem);
+}
+
 .prose code:not([class]) {
   background-color: var(--canvas-sunken);
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;

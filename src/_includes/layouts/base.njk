@@ -17,6 +17,34 @@
     {% block content %}
     {% endblock %}
   </main>
+  {% set track = lastfm.recenttracks.track[0] %}
+  {% if track %}
+    <aside class="stack stack--2xs">
+      <h3 class="hdg hdg--aside">The last thing I listened to:</h3>
+      <figure class="track">
+        {% if track.image %}
+          <img
+            class="track__media"
+            src="{{ track.image[0]['#text'] }}"
+            alt="The album cover for {{ track.album['#text'] }}"
+            width="34"
+            height="34"
+          >
+        {% else %}
+          <img
+            class="track__media"
+            src="/images/track-default"
+            alt=""
+            width="34"
+            height="34"
+          >
+        {% endif %}
+        <div class="track__meta">
+          <a href="{{ track.url }}">"{{ track.name }}"</a>, by {{ track.artist['#text'] }}
+        </div>
+      </figure>
+    </aside>
+  {% endif %}
 </div>
 </body>
 </html>

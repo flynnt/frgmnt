@@ -4,13 +4,10 @@
   margin: var(--space-2xs) auto auto 0;
 }
 
-/*
-.prose code {
+.prose code:not([class]) {
   background-color: var(--canvas-sunken);
-  box-shadow: var(--shadow-default);
-  display: block;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: var(--step-negative-1);
-  padding-block: var(--space-m);
-  padding-inline: var(--space-m);
+  display: inline-block;
+  padding: .1em .5em;
 }
-*/

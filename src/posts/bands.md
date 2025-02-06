@@ -15,7 +15,7 @@ me. Hi! I miss you.
 <!-- split -->
 
 - Drum and Wire (Marietta, GA, 1988 - 1990)
-- Ursulines (Chicago, IL, 1992 - 1994)
+- [Ursulines](https://youtu.be/XZcLeOecNG8?si=MQ_q9JqS0DRYYGOW) (Chicago, IL, 1992 - 1994)
 - Bran (Los Angeles, CA, 1995)
 - Elephant Ride (Los Angeles, CA, 1996 - 2000)
 - The Noella Hutton Band (Los Angeles, CA, 1998 - 2000)

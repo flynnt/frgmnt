@@ -63,3 +63,8 @@ h1 {
   justify-items: end;
   margin-block-start: 1rem;
 }
+
+iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+}

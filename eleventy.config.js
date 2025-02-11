@@ -59,7 +59,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addShortcode(
     'audio',
-    src => `<audio src="${src}" controls></audio>`
+    src => `<audio preload="none" src="${src}" controls></audio>`
   );
 }
 

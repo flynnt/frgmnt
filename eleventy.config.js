@@ -49,7 +49,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('postFeed', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts),
-    ].slice(0, 10);
+    ].slice(0, 20);
   });
 
   eleventyConfig.setFrontMatterParsingOptions({

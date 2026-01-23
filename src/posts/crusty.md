@@ -9,7 +9,7 @@ tags:
 
 The other day I was thinking about learning styles. I often think about learning styles, since my own personal learning style is less than conventional. I was in smart kid classes, and I did smart kid things. I was not a smart kid, but I was smart enough to know that I was not smart in the effortless polymath way that a lot of smart kids are smart. I was, and am, very jealous of that kind of intelligence.
 
-You see, I am what one of those effortlessly polymathic kids referred to as, with a finely calibrated ratio of pity and mild disgust, "a grinder." Your intelligence might come easily to you, but I will beat with an extremely unhealthy combination of caffeine, rage, and weaponized hyperfocus.
+You see, I am what one of those effortlessly polymathic kids referred to as, with a finely calibrated ratio of pity and mild disgust, "a grinder." Your intelligence might come easily to you, but I will beat you with an extremely unhealthy combination of caffeine, rage, and weaponized hyperfocus.
 
 Studying to me was always an extremely systemic kind of thing. I needed to know why things were happening. I needed to take things apart to see how they worked. This was a weird way to approach things as an extremely humanities-oriented kind of person, but you couldn't just make me aware of debtor's prisons in a fictional universe without expecting me to then need to make myself intimately aware of the economic and plolitical conditions that led to the existence of debtor's prisons. There are politics, there are elisions, there are affordances, there are omissions, there is subjectivity, there are _angles_.
 

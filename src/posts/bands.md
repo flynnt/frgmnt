@@ -19,7 +19,7 @@ me. Hi! I miss you.
 - Bran (Los Angeles, CA, 1995)
 - Elephant Ride (Los Angeles, CA, 1996 - 2000)
 - The Noella Hutton Band (Los Angeles, CA, 1998 - 2000)
-- [Hummmr](https://hummmr.bandcamp.com/) (Los Angeles, CA, 1998 - 2001)
+- [Hummmr](https://open.spotify.com/artist/1xcB2ojJUWYdojMC5TyByB) (Los Angeles, CA, 1998 - 2001)
 - [Hope in Ghosts](https://open.spotify.com/artist/39qm9UH3AWF3oQgc3r6sfN?si=Bm6YLy9RRkCC6o_MKVMFAA) (Los Angeles, CA, 2002)
 - Enemy Sun (Chicago, IL, 2004 - 2005)
 - Neat (Chicago, IL, 2005 - 2007)

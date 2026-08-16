@@ -14,7 +14,7 @@
   "type": "module",
   "engines": {
     "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "npm": ">=11.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
